@@ -1,0 +1,19 @@
+//1) Using fork() method to create a child process 
+ 
+//Code: 
+ 
+#include<stdio.h>
+ int main() 
+
+{
+ int pid; 
+pid=fork();
+if(pid==0)
+ {
+ printf("Hello from child %d\n",pid); 
+} 
+else 
+{ 
+printf("Hi from parent process\n"); 
+}
+ } 
